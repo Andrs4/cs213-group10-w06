@@ -39,12 +39,20 @@ body {
 #grid_second .box9 {
   display: flex;
 }
+.white_rounded {
+  font-size: 1.5rem;
+}
 
 @media only screen and (max-width: 599px) {
   /* body {
-    background-color: red;
-  } */
-
+      background-color: red;
+    } */
+  p {
+    font-size: 1.2rem;
+  }
+  .blue_rounded {
+    border-radius: 20px;
+  }
   #grid_first {
     grid-template-columns: 1fr;
   }
@@ -60,8 +68,11 @@ body {
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
   /* body {
-    background-color: green;
-  } */
+      background-color: green;
+    } */
+  .blue_rounded {
+    border-radius: 10px;
+  }
 
   #grid_first {
     grid-template-columns: repeat(2, 1fr);
@@ -86,9 +97,11 @@ body {
 
 @media only screen and (min-width: 1200px) {
   /* body {
-    background-color: blue;
-  } */
-
+      background-color: blue;
+    } */
+  .blue_rounded {
+    border-radius: 5px;
+  }
   #grid_first {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -107,5 +120,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-flow: nowrap;
+  }
+  .flex_div.blue_rounded {
+    border-radius: 10px;
   }
 }
